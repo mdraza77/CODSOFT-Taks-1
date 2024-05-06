@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Moodvies</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#actors">Actors</a>
+            <button id="signup" style="cursor: pointer;" onclick="display_form()">SignUp</button>
+        </nav>
+    </header>
+
+    <div class="signup-form" id="signup-form">
+        <form action="">
+            <input type="name" name="" id="1" placeholder="Enter Name" required>
+            <input type="email" name="" id="2" placeholder="Enter Email" required>
+            <input type="password" name="" id="3" placeholder="Enter Password" required>
+            <input type="password" name="" id="4" placeholder="Re-Enter Password" required>
+            <input type="submit" name="" id="" value="SignUp">
+            <p id="link">Already have an account, <span id="span" onclick="login ()">Login</span></p>
+        </form>
+    </div>
+    <div class="login-form" id="login-form">
+        <form action="">
+            <input type="email" name="" id="2" placeholder="Enter Email" required>
+            <input type="password" name="" id="3" placeholder="Enter Password" required>
+            <input type="submit" name="" id="" value="Login">
+            <p id="link">Don't have an account, <span id="span" onclick="display()">SignUp</span></p>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <div class="inputs">
+            <h1>Find the <br> most suitable Contents <br> as per your Mood</h1><br>
+            <input type="text" name="" class="search" placeholder="Search via Mood"><button class="btn">Search</button>
+            <input type="text" name="" class="search" placeholder="Search Movies"><button
+                class="btn btn-1">Search</button>
+        </div>
+    </section>
+
+    <section class="movies" id="movies">
+        <div class="movies-container">
+            <div class="movies-box">
+                <a href="#">
+                    <img src="./1.jpg">
+                </a>
+            </div>
+            <div class="movies-box">
+                <a href="#">
+                    <img src="./2.jpg">
+                </a>
+            </div>
+            <div class="movies-box">
+                <a href="#">
+                    <img src="./3.jpg">
+                </a>
+            </div>
+            <div class="movies-box">
+                <a href="#">
+                    <img src="./4.jpg">
+                </a>
+            </div>
+            <div class="movies-box">
+                <a href="#">
+                    <img src="./5.jpg">
+                </a>
+            </div>
+            <div class="movies-box">
+                <a href="#">
+                    <img src="./6.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="actors" id="actors">
+        <div class="actors-container">
+            <div class="actors-box">
+                <a href="#">
+                    <img src="./Salman-Khan.jpg">
+                </a>
+            </div>
+            <div class="actors-box">
+                <a href="#">
+                    <img src="./Shah-Rukh-Khan.jpg">
+                </a>
+            </div>
+            <div class="actors-box">
+                <a href="#">
+                    <img src="./Akshay-Kumar.jpg">
+                </a>
+            </div>
+            <div class="actors-box">
+                <a href="#">
+                    <img src="./Ajay-Devgan.png">
+                </a>
+            </div>
+            <div class="actors-box">
+                <a href="#">
+                    <img src="./amitav bachhan.jpg">
+                </a>
+            </div>
+            <div class="actors-box">
+                <a href="#">
+                    <img src="./amir khan.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+<p>Copyright © 2024 by Md Raza | All Rights Are Resarved.</p>
+<a id="btn" href="#home"><i class='bx bx-home'></i></a>
+</footer>
+</body>
+<script src="index.js"></script>
+
+</html>
